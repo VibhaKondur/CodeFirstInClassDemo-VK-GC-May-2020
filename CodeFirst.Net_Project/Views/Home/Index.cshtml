@@ -1,0 +1,9 @@
+﻿@using CodeFirst.Net_Project.Context
+@model IEnumerable<Book>
+
+@foreach (Book b in Model)
+{
+    <p>@b.Title</p>
+    <p>@b.Genre</p>
+    <p>PageCount: @b.PageCount pages</p>
+}
